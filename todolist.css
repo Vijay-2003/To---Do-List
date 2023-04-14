@@ -1,0 +1,91 @@
+body{
+    background-image: linear-gradient(to bottom,blue,white);
+    background-attachment: fixed;
+}
+*{
+    margin: 0%;
+    padding: 0%;   
+}
+input, textarea, button{
+    padding: 10px;
+    border: 1px solid;
+    font: 100 1.1rem sans-serif;
+    border-radius: 15px;
+    outline: none;
+    margin: 10px;
+}
+input{
+    box-shadow: 2px 2px 2px black;
+    border-style: ridge;
+    border-width: thick;
+}
+textarea{
+    box-shadow: 2px 2px 2px black;
+    border-style: ridge;
+    border-width: thick;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    cursor: pointer;
+}
+#btn{
+    transition: background-color 0.2s;
+}
+#btn:hover{
+    background-color: ghostwhite;
+    box-shadow: 2px 2px 2px black;
+    border-color: blue;
+    border-style: inset;
+    
+}
+.container{
+    border-radius: 30px;
+    border-style: outset;
+    border-color: black;
+    border-bottom-color: white;
+    border-right-color: white;
+    box-shadow: 9px 9px 5px black;
+    text-align: center;
+    padding: 30px;
+    width: 60%;
+    min-height: 100vh;
+    background-image:linear-gradient(30deg, black,cyan);
+    margin: auto;
+    box-sizing: border-box;
+}
+.task{
+    background-color: black;
+    box-shadow: 2px 2px 2px white;
+    color: white;
+    font: 100 1.1rem sans-serif;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    margin: 2vmax;
+    border-radius: 25px;
+}
+.task > div{
+    width: 100%;
+}
+.deletebtn{
+    border-radius: 100%;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blue;
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(white, cyan);
+}
+.deletebtn:hover{
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 2px white;
+    color: red;
+    border-style: outset;
+}
